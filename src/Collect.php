@@ -115,10 +115,10 @@ class Collect
         array_pop($this->array);
         return $this;
     }
-
     public function splice($idx, $length = 1): Collect
     {
-        array_splice($idx, $length);
+        array_splice($this->array, $idx, $length);
         return $this;
     }
+
 }
